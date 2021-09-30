@@ -8,5 +8,5 @@ WORKDIR /var/www/html/
 RUN unzip mediumish.zip
 RUN cp -rvf mediumish-html/* .
 RUN rm -rf mediumish.zip mediumish-html
-CMD ["/usr/sbin/httpd","-D","FOREGROUD"]
+CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
 EXPOSE 80
